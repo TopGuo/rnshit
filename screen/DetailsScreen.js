@@ -3,9 +3,7 @@ import { View, Text, Button } from "react-native";
 import Home from "./HomeScreen";
 import LogoTitle from "./LogoTitle";
 export default class DetailsScreen extends Component {
-  //   static navigationOptions = {
-  //     title: "Details"
-  //   };
+  
   static navigationOptions = ({ navigation }) => {
     return {
       title: navigation.getParam("otherParam", "A Nested Details Screen"),
@@ -14,8 +12,12 @@ export default class DetailsScreen extends Component {
       },
       headerTintColor: '#fff',
       headerTitleStyle: {
+        flex: 1,
+        textAlign: 'center',
         fontWeight: 'bold'
       },
+      //headerRight: <View></View>,
+      headerLeft:null
     };
   };
   constructor(props) {
@@ -24,7 +26,7 @@ export default class DetailsScreen extends Component {
   }
 
   render() {
-    const { getParam,setParams } = this.props.navigation;
+    const { getParam, setParams } = this.props.navigation;
     let itemId = getParam("itemId", "");
     let otherParam = getParam("otherParam", "");
     return (

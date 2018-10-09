@@ -34,7 +34,7 @@ const HomeStack = createStackNavigator(
   },
   {
     mode: "modal",
-    headerMode: "none"
+    //headerMode: "none"
   }
 );
 
@@ -45,7 +45,7 @@ const SettingsStack = createStackNavigator(
   },
   {
     mode: "modal",
-    headerMode: "none"
+    //headerMode: "none"
   }
 );
 const TabNavigator = createBottomTabNavigator(

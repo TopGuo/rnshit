@@ -14,6 +14,7 @@ import {
   StatusBar
 } from "react-native";
 //import {Ionicons} from "react-native-vector-icons";
+//import Icon from 'react-native-vector-icons/FontAwesome';
 import {
   createStackNavigator,
   createBottomTabNavigator
